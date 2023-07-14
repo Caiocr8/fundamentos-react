@@ -2,6 +2,7 @@ import "./App.css";
 import React from 'react';
 
 // COMPONENTS
+import { ListaAlunos } from "./components/repetição/ListaAlunos";
 import { Card } from './components/layout/Card';
 import { Primeiro } from './components/basicos/Primeiro';
 import { ComParametro } from './components/basicos/ComParametro';
@@ -15,6 +16,9 @@ export const App = (props) => {
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className='Cards'>
+                <Card titulo="#06 - Repetição" color="#4f02a8">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
                 <Card titulo="#05 - Componente com Filhos" color="#40B537">
                     <Familia sobrenome="Rocha">
                         <FamiliaMembro nome="Caio" />
